@@ -1,0 +1,40 @@
+<mxfile host="Electron">
+  <diagram name="Context Diagram" id="d1">
+    <mxGraphModel dx="3873" dy="2147" grid="1" gridSize="12" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="500" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sys" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#6A1B9A;fontColor=#6A1B9A;strokeWidth=3;fontSize=15;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;b style=&quot;&quot;&gt;0&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;&quot;&gt;Smart Donation&lt;br&gt;Platform&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="200" width="468" x="-240" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="donor" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#2E7D32;fontColor=#2E7D32;strokeWidth=2;fontStyle=1;fontSize=13;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Donor&lt;/font&gt;" vertex="1">
+          <mxGeometry height="120" width="140" x="-768" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="org" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#1565C0;fontColor=#1565C0;strokeWidth=2;fontStyle=1;fontSize=13;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Organization&lt;/font&gt;" vertex="1">
+          <mxGeometry height="120" width="204" x="528" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="admin" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#C62828;fontColor=#C62828;strokeWidth=2;fontStyle=1;fontSize=13;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Admin&lt;/font&gt;" vertex="1">
+          <mxGeometry height="70" width="364" x="-216" y="-296" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" edge="1" parent="1" source="donor" style="endArrow=classic;html=1;rounded=0;strokeColor=#2E7D32;fontColor=#2E7D32;fontSize=10;labelBackgroundColor=#ffffff;strokeWidth=1.5;exitX=1;exitY=0.2150;exitPerimeter=0;entryX=0.0302;entryY=0.3290;entryPerimeter=0;" target="sys" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Registration / login data&lt;br&gt;Donation details &amp;amp; images&lt;br&gt;Accept / reject / delivery update&lt;/font&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" edge="1" parent="1" source="sys" style="endArrow=classic;html=1;rounded=0;strokeColor=#2E7D32;fontColor=#2E7D32;fontSize=10;labelBackgroundColor=#ffffff;strokeWidth=1.5;exitX=0.0302;exitY=0.6710;exitPerimeter=0;entryX=1;entryY=0.7850;entryPerimeter=0;" target="donor" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;Smart match &amp;amp; request notifications&lt;br&gt;Request status &amp;amp; history&lt;/font&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" edge="1" parent="1" source="org" style="endArrow=classic;html=1;rounded=0;strokeColor=#1565C0;fontColor=#1565C0;fontSize=10;labelBackgroundColor=#ffffff;strokeWidth=1.5;exitX=0;exitY=0.2150;exitPerimeter=0;entryX=0.9698;entryY=0.3290;entryPerimeter=0;" target="sys" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;Registration data &amp;amp; documents&lt;br&gt;Needs, donation requests&lt;br&gt;Receipt confirmation&lt;/font&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" edge="1" parent="1" source="sys" style="endArrow=classic;html=1;rounded=0;strokeColor=#1565C0;fontColor=#1565C0;fontSize=10;labelBackgroundColor=#ffffff;strokeWidth=1.5;exitX=0.9698;exitY=0.6710;exitPerimeter=0;entryX=0;entryY=0.7850;entryPerimeter=0;" target="org" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Verification result&lt;br&gt;Smart match notifications&lt;br&gt;Request status&lt;/font&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c6" edge="1" parent="1" source="admin" style="endArrow=classic;html=1;rounded=0;strokeColor=#C62828;fontColor=#C62828;fontSize=10;labelBackgroundColor=#ffffff;strokeWidth=1.5;exitX=0.213;exitY=1.014;entryX=0.203;entryY=0.076;entryPerimeter=0;entryDx=0;entryDy=0;exitDx=0;exitDy=0;exitPerimeter=0;" target="sys" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Verification decisions&lt;br&gt;User &amp;amp; category management&lt;/font&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c7" edge="1" parent="1" source="sys" style="endArrow=classic;html=1;rounded=0;strokeColor=#C62828;fontColor=#C62828;fontSize=10;labelBackgroundColor=#ffffff;strokeWidth=1.5;exitX=0.729;exitY=0.045;exitPerimeter=0;entryX=0.888;entryY=0.946;exitDx=0;exitDy=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="admin" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;Pending verification requests&lt;br&gt;Users, donations &amp;amp; requests overview&lt;/font&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
